@@ -9,5 +9,5 @@ const app = express(),
 
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(process.cwd(), 'public')), cors())
-app.get('/', (req, res) => res.render('index', {titles: 'Selamat hari raya idul fitri - 1444 H'}))
+app.get('/', (req, res) => res.render('index'))
 server.listen(port, () => console.log(`Server has connected...`))
