@@ -9,5 +9,5 @@ const app = express(),
 
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(process.cwd(), 'public')), cors())
-app.get('/', (req, res) => res.render('index'))
+app.get('/', (req, res) => res.render('/views/index'))
 server.listen(port, () => console.log(`Server has connected...`))
