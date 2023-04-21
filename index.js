@@ -9,6 +9,5 @@ const app = express(),
   server = http.createServer(app)
 
 app.set('view engine', 'ejs')
-app.use(express.static(path.join(process.cwd(), 'public')), cors())
-routes(app)
+app.use(express.static(path.join(process.cwd(), 'public')), cors(), routes)
 server.listen(port, () => console.log(`Server has connected...`))
