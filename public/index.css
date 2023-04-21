@@ -6,6 +6,7 @@ body {
 	@apply bg-gradient-to-tr from-cyan-600 to-teal-400 bg-right bg-[url('/arab.jpg')] bg-cover min-h-screen w-full text-white justify-center items-center overflow-hidden;
   filter: drop-shadow(0 0 20px white);
 	background-position: fixed;
+	background-repeat: no-repeat;
 }
 
 .x1 {
