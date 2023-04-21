@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import http from 'http'
 import path from 'path'
+import routes from './routes.js'
 
 const app = express(),
   port = 3004,
@@ -9,5 +10,5 @@ const app = express(),
 
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(process.cwd(), 'public')), cors())
-app.get('/', (req, res) => res.render('/views/index.ejs'))
+routes(app)
 server.listen(port, () => console.log(`Server has connected...`))
