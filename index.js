@@ -5,7 +5,7 @@ import path from 'path'
 import routes from './routes.js'
 
 const app = express(),
-  port = 3004,
+  port = 3000,
   server = http.createServer(app)
 
 app.set('view engine', 'ejs')
