@@ -1,0 +1,11 @@
+#dependecies
+/node_modules
+
+# testing
+/coverage
+
+
+# misc
+DS_Store
+package-lock.json
+yarn.lock

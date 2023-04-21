@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<%- include('./partials/head'); %>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+		<div id="loadd" class="fixed top-0 left-0 w-full min-h-screen z-[999] bg-white"></div>
+		<section class="bgan overflow-hidden">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+    </section>
+		<%- include('./partials/main'); %>
+	<audio id="bolaxd">
+		<source src="nisa.mp3" type="audio/mpeg">
+	</audio>
+	<script>
+	var loader = document.getElementById('loadd'),
+	aud = document.getElementById('bolaxd')
+	window.addEventListener('load', () => loader.style.display = 'none' )
+  swal({ title: '', text: 'Selamat hari raya Idul fitri\nMinal aidzin wal faidzin' })
+      .then(() => aud.play() ).catch(() => aud.play() )
+	</script>
+</body>
+</html>
