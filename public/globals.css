@@ -729,7 +729,6 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
   background-image: url('/arab.jpg');
   --tw-gradient-from: #0891b2 var(--tw-gradient-from-position);
